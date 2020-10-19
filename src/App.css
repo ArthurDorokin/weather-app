@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main .wrap-weather {
+    background: linear-gradient(45deg, #30cfd0, #330867);
+    width: 100%;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main .wrap-weather .formGroup {
+    display: flex;
+    justify-content: center;
+    padding: 15% 0 0 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main .wrap-weather .city-inp,
+.main .wrap-weather .country-inp {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin: 0 15px 0 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.main .wrap-weather .city-inp input,
+.main .wrap-weather .country-inp input {
+    padding: 12px 8px 12px 8px;
+    border: 0;
+    outline: none;
+    width: 250px;
+    font-size: 15px;
+    letter-spacing: .5px;
+    background: transparent;
+    border-bottom: 2px solid #dedede;
+    color: #dedede;
+    font-family: 'Comfortaa', cursive;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main .wrap-weather .formGroup label {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: .5s;
+    color: #dedede;
+}
+
+.main .wrap-weather .formGroup input:focus + label {
+    font-size: 12px;
+    top: -10px;
+    left: 0;
+    transition: .5s;
+    text-decoration: underline;
+    color: #dedede;
+    font-family: 'Comfortaa', cursive;
+}
+
+.main .wrap-weather .btn-formTakeData {
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #ffc107;
+    padding: 12px;
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: .5px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.main .wrap-weather .generationData {
+    display: flex;
+    justify-content: center;
+    margin: 8% 0 0 0;
 }
