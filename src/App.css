@@ -58,6 +58,12 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+.main .wrap-weather .formTakeData .error {
+    text-align: center;
+    color: #ce5b5b;
+    font-size: 16px;
+}
+
 .main .wrap-weather .btn-formTakeData {
     border-radius: 5px;
     border: 0;
@@ -74,5 +80,55 @@ body {
 .main .wrap-weather .generationData {
     display: flex;
     justify-content: center;
-    margin: 8% 0 0 0;
+    margin: 5% 0 0 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .wrap-weather .generationData .icon {
+    display: flex;
+    justify-content: center;
+}
+
+.main .wrap-weather .generationData .description {
+    color: #dedede;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main .wrap-weather .generationData .title {
+    color: #dedede;
+    font-size: 42px;
+}
+
+.main .wrap-weather .weather {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+
+.main .wrap-weather .weather .weather-main {
+    color: #dedede;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15px 0;
+}
+
+.main .wrap-weather .weather .weather-min-max {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+}
+
+.main .wrap-weather .weather .weather-min {
+    color: #dedede;
+    font-size: 20px;
+}
+
+.main .wrap-weather .weather .weather-max {
+    color: #dedede;
+    font-size: 20px;
 }
