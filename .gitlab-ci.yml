@@ -1,0 +1,44 @@
+stages:
+  - build-image
+  - deploy-image
+
+image: docker
+services:
+- docker:dind
+
+
+# set varialbes
+variables:
+  container_image: "weather-app"
+  my_registry: "anatoly22081992"
+
+build-image:
+  stage: build-image
+  script:
+    - docker login -u "${my_registry}" -p "${DOCKERHUBPW}"
+    - echo "Building container image $container_image"
+    - docker build --no-cache -f Dockerfile.crash -t "${my_registry}"/"${container_image}":latest .
+    - docker push "${my_registry}"/"${container_image}":latest
+  only:
+    - master
+
+
+deploy-image:
+  stage: deploy-image
+  before_script:
+  # install ssh-agent
+  - 'which ssh-agent || (apk add --update --no-cache openssh-client)'
+  # run ssh-agent
+  - 'eval $(ssh-agent -s)'
+  # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
+  - echo "$SSH_SERVER_KEY" > /tmp/gitlab_ci_ssh
+  - chmod 600 /tmp/gitlab_ci_ssh
+  - ssh-add /tmp/gitlab_ci_ssh
+  # disable host key checking (NOTE: makes you susceptible to man-in-the-middle attacks)
+  # WARNING: use only in docker container, if you use it with shell you will overwrite your user's ssh config
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    - ssh -p "${SSHPORT}" "${SSHUSER}"@"${IPSERVER}" "cd ~ && docker-compose stop && docker-compose pull && docker-compose up -d"
+  only:
+    - master
