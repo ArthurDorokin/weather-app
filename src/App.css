@@ -58,6 +58,16 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+.main .wrap-weather .formGroup .city-inp.up label {
+    font-size: 12px;
+    top: -10px;
+    left: 0;
+    transition: .5s;
+    text-decoration: underline;
+    color: #dedede;
+    font-family: 'Comfortaa', cursive;
+}
+
 .main .wrap-weather .formTakeData .error {
     text-align: center;
     color: #ce5b5b;
@@ -105,6 +115,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 20px 0 0 0;
+    align-items: center;
 }
 
 .main .wrap-weather .weather .weather-main {
@@ -114,6 +125,18 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 0 15px 0;
+    position: relative;
+}
+
+.main .wrap-weather .weather .weather-main:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    width: 7px;
+    height: 7px;
+    border: #ffffff solid 1px;
+    border-radius: 20px;
 }
 
 .main .wrap-weather .weather .weather-min-max {
@@ -126,9 +149,27 @@ body {
 .main .wrap-weather .weather .weather-min {
     color: #dedede;
     font-size: 20px;
+    position: relative;
+}
+
+.main .wrap-weather .weather .weather-min:before {
+    content: 'max';
+    position: absolute;
+    right: -30px;
+    font-size: 12px;
+    bottom: 0;
 }
 
 .main .wrap-weather .weather .weather-max {
     color: #dedede;
     font-size: 20px;
+    position: relative;
+}
+
+.main .wrap-weather .weather .weather-max:before {
+    content: 'min';
+    position: absolute;
+    right: -30px;
+    font-size: 12px;
+    bottom: 0;
 }

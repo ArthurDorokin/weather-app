@@ -12,12 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9022f827-c14f-464c-9786-3b5eeebc5e32" name="Default Changelist" comment="weather-app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/content/form/FormTakeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/form/FormTakeData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/content/generationData/GenerationData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/generationData/GenerationData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/redux/action/takeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/redux/action/takeData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/redux/reducers/takeData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/redux/reducers/takeData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +68,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="state = {" />
+    </option>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,7 +85,7 @@
       <workItem from="1603131021625" duration="2549000" />
       <workItem from="1603174200186" duration="11392000" />
       <workItem from="1603212103750" duration="5731000" />
-      <workItem from="1603223232436" duration="6040000" />
+      <workItem from="1603223232436" duration="19012000" />
     </task>
     <task id="LOCAL-00001" summary="weather-app">
       <created>1603099633609</created>
@@ -99,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603114617337</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="weather-app">
+      <created>1603231041800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603231041800</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,18 +139,22 @@
       <screen x="0" y="23" width="1920" height="969" />
     </state>
     <state x="783" y="438" key="NewPhpFileDialog/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603101733271" />
-    <state x="560" y="247" key="Vcs.Push.Dialog.v2" timestamp="1603114625026">
+    <state x="560" y="247" key="Vcs.Push.Dialog.v2" timestamp="1603231048060">
       <screen x="0" y="23" width="1920" height="969" />
     </state>
-    <state x="560" y="247" key="Vcs.Push.Dialog.v2/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603114625026" />
-    <state x="100" y="123" width="1720" height="769" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603224343952">
+    <state x="560" y="247" key="Vcs.Push.Dialog.v2/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603231048060" />
+    <state x="100" y="123" width="1720" height="769" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603271764112">
       <screen x="0" y="23" width="1920" height="969" />
     </state>
     <state x="-1820" y="132" width="1720" height="839" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.969/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1603219387440" />
-    <state x="100" y="123" width="1720" height="769" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603224343952" />
-    <state x="667" y="262" width="586" height="490" key="find.popup" timestamp="1603229316081">
+    <state x="100" y="123" width="1720" height="769" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603271764112" />
+    <state x="667" y="262" width="586" height="490" key="find.popup" timestamp="1603282999952">
       <screen x="0" y="23" width="1920" height="969" />
     </state>
-    <state x="667" y="262" width="586" height="490" key="find.popup/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603229316081" />
+    <state x="667" y="262" width="586" height="490" key="find.popup/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603282999952" />
+    <state x="625" y="234" key="run.anything.popup" timestamp="1603277565290">
+      <screen x="0" y="23" width="1920" height="969" />
+    </state>
+    <state x="625" y="234" key="run.anything.popup/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603277565290" />
   </component>
 </project>

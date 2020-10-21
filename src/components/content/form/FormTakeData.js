@@ -3,10 +3,19 @@ import {connect} from "react-redux";
 import {fetchInfo} from "../../redux/action/takeData";
 
 class FormTakeData extends Component {
+    state = {
+        dataLength: ''
+    }
+
     handleSubmit = e => {
         e.preventDefault();
         const data = e.target.elements.city.value;
-        this.props.fetchInfo(data);
+        this.props.fetchInfo(this.state.dataLength);
+    }
+
+    handleOnChange = e => {
+        const dataLength = e.target.value.replace(/[0-9]/g, '');
+        this.setState({dataLength})
     }
 
     render() {
@@ -15,8 +24,8 @@ class FormTakeData extends Component {
         return (
             <div className="formTakeData">
                 <form onSubmit={this.handleSubmit} className="formGroup">
-                    <div className="city-inp">
-                        <input type="text" id="city" name="city" autoComplete="off"></input>
+                    <div className={`${"city-inp"}${this.state.dataLength.length ? " up" : ""}`}>
+                        <input type="text" id="city" name="city" autoComplete="off" onChange={this.handleOnChange}/>
                         <label htmlFor="city">city</label>
                     </div>
                     <button type="submit" className="btn-formTakeData">find out the weather</button>

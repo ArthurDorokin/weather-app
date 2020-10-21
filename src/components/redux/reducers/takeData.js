@@ -10,7 +10,6 @@ export default (state = initialState, action) => {
                 ...state
             }
         case "FETCH_INFO_SUCCESS":
-            console.log(action.payload)
             return {
                 ...state,
                 takeData:
