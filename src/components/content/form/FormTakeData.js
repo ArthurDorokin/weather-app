@@ -9,7 +9,6 @@ class FormTakeData extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        const data = e.target.elements.city.value;
         this.props.fetchInfo(this.state.dataLength);
     }
 
