@@ -10,9 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9022f827-c14f-464c-9786-3b5eeebc5e32" name="Default Changelist" comment="weather-app">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9022f827-c14f-464c-9786-3b5eeebc5e32" name="Default Changelist" comment="weather-app" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +81,7 @@
       <workItem from="1603174200186" duration="11392000" />
       <workItem from="1603212103750" duration="5731000" />
       <workItem from="1603223232436" duration="22700000" />
+      <workItem from="1603362274336" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="weather-app">
       <created>1603099633609</created>
@@ -147,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603289773561</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="weather-app">
+      <created>1603362395538</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603362395538</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,10 +184,11 @@
       <screen x="0" y="23" width="1920" height="969" />
     </state>
     <state x="783" y="438" key="NewPhpFileDialog/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603101733271" />
-    <state x="560" y="267" key="Vcs.Push.Dialog.v2" timestamp="1603289783086">
+    <state x="560" y="267" key="Vcs.Push.Dialog.v2" timestamp="1603362405942">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="560" y="267" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1603289783086" />
+    <state x="560" y="267" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.969@0.23.1920.1057" timestamp="1603362405942" />
     <state x="560" y="247" key="Vcs.Push.Dialog.v2/0.23.1920.969/-1920.23.1920.1057@0.23.1920.969" timestamp="1603287211066" />
     <state x="100" y="123" width="1720" height="769" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603271764112">
       <screen x="0" y="23" width="1920" height="969" />

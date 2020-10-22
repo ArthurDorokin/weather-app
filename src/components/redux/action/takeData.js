@@ -20,7 +20,7 @@ const API_KEY = "dddf9f35ba14b846f68ac0564bb924d8";
 export const fetchInfo = (data) => {
     return (dispatch) => {
         dispatch(fetchInfoRequest)
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${data}&lang=ru&appid=${API_KEY}&units=metric`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${data}&lang=ru&appid=${API_KEY}&units=metric`)
             .then(response => {
                 const data = response.data;
                 dispatch(fetchInfoSuccess(data))
