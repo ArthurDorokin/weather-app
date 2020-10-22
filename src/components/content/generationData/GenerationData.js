@@ -6,19 +6,19 @@ class GenerationData extends Component {
         const {takeData} = this.props.takeData;
         const {error} = this.props.error;
 
-        const obj_keys = Object.keys(error).length > 0
-        const obj_keys_data = Object.keys(takeData).length === 0
-        const img_url = `http://openweathermap.org/img/wn/${takeData.weather_icon}@2x.png`
+        const objKeys = Object.keys(error).length > 0
+        const objKeysData = Object.keys(takeData).length === 0
+        const imgUrl = `http://openweathermap.org/img/wn/${takeData.weather_icon}@2x.png`
 
         return (
             <div className="generationData">
-                {obj_keys || obj_keys_data ? " " : <div className="wrap">
+                {objKeys || objKeysData ? " " : <div className="wrap">
                         <div className="title">
                             {takeData.city} {takeData.country}
                         </div>
                         <div className="description-weather">
                             <div className="icon">
-                                {typeof (takeData.weather_icon) != "undefined" ? <img src={img_url} alt="icon"/> : ""}
+                                {typeof (takeData.weather_icon) != "undefined" ? <img src={imgUrl} alt="icon"/> : ""}
                             </div>
                             <div className="description">{takeData.weather_desc}</div>
                         </div>
