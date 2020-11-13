@@ -6,9 +6,9 @@ class GenerationData extends Component {
         const {takeData} = this.props.takeData;
         const {error} = this.props.error;
 
-        const objKeys = Object.keys(error).length > 0
-        const objKeysData = Object.keys(takeData).length === 0
-        const imgUrl = `http://openweathermap.org/img/wn/${takeData.weather_icon}@2x.png`
+        const objKeys = Object.keys(error).length > 0;
+        const objKeysData = Object.keys(takeData).length === 0;
+        const imgUrl = `http://openweathermap.org/img/wn/${takeData.weather_icon}@2x.png`;
 
         return (
             <div className="generationData">
